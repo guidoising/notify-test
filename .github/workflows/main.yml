@@ -1,0 +1,16 @@
+# Erster Versuch nach Kaptel 5.2 git compendium eine WhatsApp Notofication zu senden bei einem Push 
+on: push
+name: WhatsApp Notification Demo
+jobs:
+  WhatsAppNotification:
+    name: WhatsApp Notification
+    runs-on: ubuntu-latest
+    steps:
+    - name: WhatsApp Notification Action
+    # You may pin to the exact commit or the version.
+    # uses: AzliRynz/whatsapp-notification-action@2e13f4d7f89a3fdb27048d138f77c1c8ef2c01cc
+      uses: AzliRynz/whatsapp-notification-action@v1.0.1
+      with: https://chat.whatsapp.com/Du1jbyXvf46KL4de9EMunA?mode=ac_t
+         # Invite link to WhatsApp group
+      whatsapp_invite_link: 
+          
